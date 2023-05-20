@@ -7,8 +7,10 @@ public class Fibonacci {
 
 		int pos = 8;
 		int result = fib(pos);
-	
+		int result1 = fib(pos);
 		System.out.println(result);
+		System.out.println(result1);
+
 	}
 	
 	public static int fib(int pos) {
@@ -21,4 +23,8 @@ public class Fibonacci {
 		return c;
 	}
 
+	//Using recursion
+	public static int fibonacci(int pos) {
+		return fib(pos-1) + fib(pos-2);
+	}
 }
